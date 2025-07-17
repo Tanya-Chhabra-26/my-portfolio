@@ -1,15 +1,15 @@
-
 import { motion } from 'framer-motion'
 import AboutMe from '@/components/aboutme'
 import Navbar from '@/components/navbar'
-
+import Contact from '@/components/contact'
 export default function Home() {
   return (
     <>
       <div>
         <Navbar />
       </div>
-      <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-100 flex flex-col items-center justify-center text-center p-6">
+      <div className="pt-20 min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-100 flex flex-col items-center justify-center text-center p-6 cedarville-cursive-regular">
+
 
         <motion.h1
           className="text-5xl md:text-6xl font-bold text-pink-700"
@@ -17,7 +17,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Hi, I’m Tanya Chhabra!
+          Hi, i’m Tanya Chhabra!
         </motion.h1>
 
         <motion.p
@@ -44,6 +44,7 @@ export default function Home() {
           </a>
         </div>
         <AboutMe />
+        <Contact />
       </div>
     </>
   )
